@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="botbuilder-4.0.0-alpha2018041201">
+  <Namespace Name="Microsoft.Bot.Builder.Adapters">
+    <Type Name="Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter" Id="T:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter">
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.#ctor(Microsoft.Bot.Connector.Authentication.ICredentialProvider,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.#ctor(System.String,System.String,Microsoft.Rest.TransientFaultHandling.RetryPolicy,System.Net.Http.HttpClient,Microsoft.Bot.Builder.IMiddleware)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.ContinueConversation(System.String,Microsoft.Bot.Schema.ConversationReference,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.CreateConversation(System.String,System.String,Microsoft.Bot.Connector.Authentication.MicrosoftAppCredentials,Microsoft.Bot.Schema.ConversationParameters,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.DeleteActivity(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.ConversationReference)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.ProcessActivity(System.String,Microsoft.Bot.Schema.Activity,System.Func{Microsoft.Bot.Builder.ITurnContext,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.SendActivities(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity[])" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.UpdateActivity(Microsoft.Bot.Builder.ITurnContext,Microsoft.Bot.Schema.Activity)" />
+      <Member Id="M:Microsoft.Bot.Builder.Adapters.BotFrameworkAdapter.Use(Microsoft.Bot.Builder.IMiddleware)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder.BotFramework">
+    <Type Name="Microsoft.Bot.Builder.BotFramework.ConfigurationCredentialProvider" Id="T:Microsoft.Bot.Builder.BotFramework.ConfigurationCredentialProvider">
+      <Member Id="M:Microsoft.Bot.Builder.BotFramework.ConfigurationCredentialProvider.#ctor(Microsoft.Extensions.Configuration.IConfiguration)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Bot.Builder">
+    <Type Name="Microsoft.Bot.Builder.BotFrameworkHttpStatusCodeErrorDetectionStrategy" Id="T:Microsoft.Bot.Builder.BotFrameworkHttpStatusCodeErrorDetectionStrategy">
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkHttpStatusCodeErrorDetectionStrategy.#ctor" />
+      <Member Id="M:Microsoft.Bot.Builder.BotFrameworkHttpStatusCodeErrorDetectionStrategy.IsTransient(System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Bot.Builder.InvokeResponse" Id="T:Microsoft.Bot.Builder.InvokeResponse">
+      <Member Id="M:Microsoft.Bot.Builder.InvokeResponse.#ctor" />
+      <Member Id="P:Microsoft.Bot.Builder.InvokeResponse.Body" />
+      <Member Id="P:Microsoft.Bot.Builder.InvokeResponse.Status" />
+    </Type>
+  </Namespace>
+</Framework>
